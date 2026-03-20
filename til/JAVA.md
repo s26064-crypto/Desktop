@@ -258,3 +258,13 @@ if (i == 3) {
 - 연산자: 계산
 - 반복문: 반복 실행
 - 자바: JVM 기반으로 모든 OS에서 실행 가능
+
+---
+
+### Scanner
+
+- 사용자로부터 입력을 받는 도구
+```java
+import java.util.Scanner; // Scanner 사용 준비
+
+Scanner sc = new Scanner(System.in) // 입력 받을 준비
