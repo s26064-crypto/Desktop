@@ -268,3 +268,4 @@ if (i == 3) {
 import java.util.Scanner; // Scanner 사용 준비
 
 Scanner sc = new Scanner(System.in) // 입력 받을 준비
+```
