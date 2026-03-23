@@ -275,6 +275,7 @@ Scanner sc = new Scanner(System.in) // 입력 받을 준비
 int age = sc.nextInt();
 sc.nextLine(); // 남아있는 엔터 처리(중요함)
 String name = sc.nextLine();
+```
 
 ---
 
