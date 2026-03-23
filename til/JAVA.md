@@ -286,5 +286,5 @@ arr[1] = 20;
 arr[2] = 30; // 배열 값 지정
 
 for(int num : arr) {
-    System.out.println(num);
-}           // 배열 출력
+    System.out.println(num);    // 배열 출력
+}
