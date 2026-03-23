@@ -269,3 +269,22 @@ import java.util.Scanner; // Scanner 사용 준비
 
 Scanner sc = new Scanner(System.in) // 입력 받을 준비
 ```
+
+## 배열
+- 같은 타입만 저장 가능
+- 크기 고정
+- 빠른 데이터 접근 가능
+- 인덱스로 접근
+
+```java
+int[] arr; // 배열 선언
+
+arr = new int[5]; // 길이가 5인 배열
+
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30; // 배열 값 지정
+
+for(int num : arr) {
+    System.out.println(num);
+}           // 배열 출력
