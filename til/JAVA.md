@@ -268,7 +268,15 @@ if (i == 3) {
 import java.util.Scanner; // Scanner 사용 준비
 
 Scanner sc = new Scanner(System.in) // 입력 받을 준비
+
 ```
+-예
+```java
+int age = sc.nextInt();
+sc.nextLine(); // 남아있는 엔터 처리(중요함)
+String name = sc.nextLine();
+
+---
 
 ## 배열
 - 같은 타입만 저장 가능
