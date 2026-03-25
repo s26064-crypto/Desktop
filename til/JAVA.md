@@ -303,4 +303,63 @@ arr .length     // 배열 길이 확인
 
 ---
 
-###
+### 메서드
+
+## 메서드 (Method)
+
+- 특정 작업을 수행하는 코드 묶음
+- 재사용 가능 (코드 중복 제거)
+
+---
+
+### 기본 구조
+반환타입 메서드이름(매개변수) {
+    // 실행 코드
+}
+
+---
+
+### 메서드 정의 & 호출
+``` java
+public class Main {
+
+    public static void hello() {
+        System.out.println("안녕하세요");
+    }
+
+    public static void main(String[] args) {
+        hello();
+    }
+}
+```
+---
+
+### 매개변수 (Parameter)
+```java
+public class Main {
+
+    public static void greet(String name) {
+        System.out.println("안녕 " + name);
+    }
+
+    public static void main(String[] args) {
+        greet("Tom");
+    }
+}
+```
+---
+
+### 반환값 (Return)
+```java
+public class Main {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add(10, 20);
+        System.out.println(result);
+    }
+}
+```
