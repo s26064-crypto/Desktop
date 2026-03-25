@@ -324,7 +324,7 @@ arr .length     // 배열 길이 확인
 public class Main {
 
     public static void hello() {
-        System.out.println("안녕하세요");
+        System.out.println("GSM");
     }
 
     public static void main(String[] args) {
@@ -339,7 +339,7 @@ public class Main {
 public class Main {
 
     public static void greet(String name) {
-        System.out.println("안녕 " + name);
+        System.out.println("GSM " + name);
     }
 
     public static void main(String[] args) {
