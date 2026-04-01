@@ -42,15 +42,23 @@
 ```java
 public class ApiTest {
     public static void main(String[] args) throws Exception {
+
+        // API 주소 생성 (요청할 URL)
         URL url = new URL("https://jsonplaceholder.typicode.com/posts/1");
+
+        // URL에서 데이터를 읽어오기 위한 스트림 생성
         BufferedReader br = new BufferedReader(
-                new InputStreamReader(url.openStream())
+                new InputStreamReader(url.openStream()) // API 응답 데이터를 열기
         );
 
-        String line;
+        String line; // 한 줄씩 데이터를 저장할 변수
+
+        // 데이터를 한 줄씩 읽어서 출력 (데이터가 끝날 때까지 반복)
         while ((line = br.readLine()) != null) {
-            System.out.println(line); // API 데이터 출력
+            System.out.println(line); // API에서 받은 JSON 데이터 출력
         }
+
+        br.close(); // 스트림 닫기 (자원 해제)
     }
 }
 ```
@@ -61,21 +69,29 @@ public class ApiTest {
 
 public class DBTest {
     public static void main(String[] args) throws Exception {
+
+        // DB 연결 (SQLite 파일 생성 또는 연결)
         Connection conn = DriverManager.getConnection(
-                "jdbc:sqlite:test.db"
+                "jdbc:sqlite:test.db" // test.db라는 파일 DB에 연결
         );
 
+        // SQL 실행을 위한 객체 생성
         Statement stmt = conn.createStatement();
 
+        // 테이블 생성 (이미 있으면 생성 안 함)
         stmt.executeUpdate(
             "CREATE TABLE IF NOT EXISTS posts (id INTEGER, title TEXT)"
         );
 
+        // 데이터 삽입 (id=1, title='Hello API')
         stmt.executeUpdate(
             "INSERT INTO posts VALUES (1, 'Hello API')"
         );
 
+        // DB 연결 종료
         conn.close();
+
+        // 실행 완료 메시지 출력
         System.out.println("DB 저장 완료!");
     }
 }
