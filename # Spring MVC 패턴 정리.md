@@ -31,12 +31,7 @@
 
 ## 3. 동작 흐름
 
-1. 사용자가 요청을 보낸다
-2. Controller가 요청을 받는다
-3. Service/Model을 통해 데이터를 처리한다
-4. 처리 결과를 View에 전달한다
-5. View가 사용자에게 화면을 출력한다
-
+- 사용자 요청 → Controller → Service → Repository → DB → 다시 Controller → View → 사용자 출력
 ---
 
 ## 4. 장점
