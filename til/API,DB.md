@@ -42,23 +42,15 @@
 ```java
 public class ApiTest {
     public static void main(String[] args) throws Exception {
-
-        // API 주소 생성 (요청할 URL)
         URL url = new URL("https://jsonplaceholder.typicode.com/posts/1");
-
-        // URL에서 데이터를 읽어오기 위한 스트림 생성
         BufferedReader br = new BufferedReader(
-                new InputStreamReader(url.openStream()) // API 응답 데이터를 열기
+                new InputStreamReader(url.openStream())
         );
 
-        String line; // 한 줄씩 데이터를 저장할 변수
-
-        // 데이터를 한 줄씩 읽어서 출력 (데이터가 끝날 때까지 반복)
+        String line;
         while ((line = br.readLine()) != null) {
-            System.out.println(line); // API에서 받은 JSON 데이터 출력
+            System.out.println(line); // API 데이터 출력
         }
-
-        br.close(); // 스트림 닫기 (자원 해제)
     }
 }
 ```
