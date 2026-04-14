@@ -17,13 +17,11 @@ public class BoardService {
 
     private final BoardRepository boardRepository;
 
-    // 글 저장
     public void save(BoardDTO boarddto) {
         BoardEntity boardEntity = BoardEntity.toSaveEntity(boarddto);
         boardRepository.save(boardEntity);
     }
 
-    // 전체 목록 조회
     public List<BoardDTO> findAll() {
         List<BoardEntity> boardEntityList = boardRepository.findAll();
         List<BoardDTO> boardDTOList = new ArrayList<>();
@@ -35,7 +33,6 @@ public class BoardService {
         return boardDTOList;
     }
 
-    // 조회수 증가
     @Transactional
     public void updateHits(Long id){
         boardRepository.updateHits(id);
