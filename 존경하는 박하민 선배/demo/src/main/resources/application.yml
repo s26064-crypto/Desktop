@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jabc:mysql://localhost:3306/db_codingrecipe?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: CDH
-    password: 123456
+    password: 123
   thymeleaf:
     cache: false
 
@@ -17,4 +17,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-      format_sql: true
+      format_sql: truess
