@@ -35,11 +35,11 @@
 ```text
 Header.Payload.Signature
 ```
-###### 1) Header
+##### 1) Header
 - 토큰 타입 + 암호화 방식
 
-###### 2) payload
+##### 2) payload
 - 사용자 정보(id, role 등)
 
-###### 3) Signature
+##### 3) Signature
 - 위조 방지용 서명
