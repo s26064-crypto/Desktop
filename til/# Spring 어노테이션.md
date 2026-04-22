@@ -93,3 +93,4 @@ public String search(@RequestParam String name) {
     // 쿼리 스트링의 'name' 값을 가져옴
     return "Search result for: " + name;
 }
+```
