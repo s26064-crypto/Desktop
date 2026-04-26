@@ -64,7 +64,7 @@ public class BoardService {
         if(boardEntity.getBoardPass().equals(boardDTO.getBoardPass())){
             boardEntity.update(boardDTO);
         } else {
-            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+            throw new IllegalArgumentException("비밀번호 불일치");
         }
     }
 }
