@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "code": "CH-01",
+    "chapter": "제1장",
+    "title": "봉쇄된 대학",
+    "type": "radio-map-restore",
+    "roleOwner": "다온",
+    "date": "1980년 5월 17일 밤 ~ 5월 18일 새벽",
+    "place": "전남대학교 · 조선대학교",
+    "summary": "비상계엄 강화 이후 끊어진 라디오 신호와 문서 조각을 맞춰 봉쇄된 대학의 상황을 복원합니다.",
+    "storyQuote": "비상계엄령 사이렌이 울리고, 기록 보관소의 화면은 1980년 5월 17일 밤으로 되감깁니다.",
+    "instruction": "라디오 잡음 속에서 들리는 단어와 깨진 문서 조각을 조합하세요. 대학이 어떤 방식으로 통제되었는지 설명하는 단서만 선택해야 합니다.",
+    "damagedRecord": "라디오 주파수 5.18MHz에서 끊어진 신호가 잡힙니다. 전남대와 조선대의 기록은 [     ] 상태이며, 학생 조직망은 [     ]되고 있습니다.",
+    "clues": [
+      {
+        "id": "emergency-martial-law",
+        "label": "비상계엄 확대",
+        "correct": true,
+        "reason": "스토리의 출발점이며 대학 통제의 배경입니다."
+      },
+      {
+        "id": "university-control",
+        "label": "대학 통제",
+        "correct": true,
+        "reason": "전남대와 조선대가 자유로운 토론 공간이 아니라 통제 구역으로 바뀌는 핵심 단서입니다."
+      },
+      {
+        "id": "student-arrest",
+        "label": "학생 연행과 감금",
+        "correct": true,
+        "reason": "라디오 신호 속에서 드러나는 피해 상황을 설명합니다."
+      },
+      {
+        "id": "radio-frequency",
+        "label": "끊어진 라디오 신호",
+        "correct": true,
+        "reason": "다음 기록 위치로 이동하게 만드는 장치입니다."
+      },
+      {
+        "id": "normal-campus",
+        "label": "정상 수업 재개",
+        "correct": false,
+        "reason": "비상계엄 강화와 대학 봉쇄 흐름에 맞지 않는 단서입니다."
+      }
+    ],
+    "officialNote": "비상계엄 확대와 대학 통제는 5·18 초기 상황을 설명하는 중요한 배경입니다. 이 장은 사용자가 단순히 사건을 읽는 것이 아니라, 차단된 신호와 문서를 통해 통제된 공간을 직접 복원하게 만드는 역할을 합니다.",
+    "restoredText": "비상계엄 강화 이후 전남대와 조선대는 군에 의해 통제되었고, 학생들은 구타·감금·연행의 위협 속에서 흩어졌습니다. 마지막 라디오 신호는 전남대 정문 앞으로 모이는 학생들의 움직임을 가리킵니다.",
+    "rememberPoint": "대학은 자유롭게 모이고 토론하던 공간이었지만, 계엄 상황에서는 통제와 봉쇄의 공간으로 바뀌었습니다.",
+    "nextRecord": "다음 기록: 전남대 정문",
+    "sources": [
+      {
+        "name": "5·18기념재단 — 5·18 그날의 기록과 진실",
+        "url": "https://www.518.org/base/menu/baseView?menuLevel=2&menuNo=1"
+      },
+      {
+        "name": "전남대학교 민주길 — 전남대 정문",
+        "url": "https://518trail.jnu.ac.kr/SubPage.aspx?PageCode=K20200"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "code": "CH-02",
+    "chapter": "제2장",
+    "title": "5.18, 전남대 정문",
+    "type": "gate-record-restore",
+    "roleOwner": "다온",
+    "date": "1980년 5월 18일",
+    "place": "전남대학교 정문",
+    "summary": "휴교령이 내려진 전남대 정문 앞에서 학생들이 계엄군과 대치하고, 기록이 대학 밖으로 이동하는 순간을 복원합니다.",
+    "storyQuote": "봉쇄된 대학의 마지막 라디오 신호는 전남대 정문 앞에 모이는 학생들을 가리킵니다.",
+    "instruction": "손상된 사진, 끊어진 증언, 검열된 구호를 연결해 5월 18일 전남대 정문 상황을 복원하세요.",
+    "damagedRecord": "1980년 5월 18일 아침, 휴교령이 내려진 전남대 정문 앞에 학생들이 모였습니다. 학생들은 [     ], [     ], [     ]을 요구했고, 대치는 곧 강경 진압으로 이어졌습니다.",
+    "clues": [
+      {
+        "id": "date-518",
+        "label": "1980년 5월 18일",
+        "correct": true,
+        "reason": "이 장의 기준 날짜입니다."
+      },
+      {
+        "id": "gate-jnu",
+        "label": "전남대 정문",
+        "correct": true,
+        "reason": "라디오 신호가 안내한 다음 기록 위치입니다."
+      },
+      {
+        "id": "lift-martial-law",
+        "label": "비상계엄 해제 요구",
+        "correct": true,
+        "reason": "스토리보드에 포함된 학생들의 핵심 요구입니다."
+      },
+      {
+        "id": "troop-withdrawal",
+        "label": "계엄군 철수 요구",
+        "correct": true,
+        "reason": "대치 상황에서 등장하는 구호를 복원하는 단서입니다."
+      },
+      {
+        "id": "class-closed",
+        "label": "휴교령 철폐 요구",
+        "correct": true,
+        "reason": "학교 통제 상황과 직접 연결되는 요구입니다."
+      },
+      {
+        "id": "isolated-clash",
+        "label": "대학 안에서만 끝난 작은 충돌",
+        "correct": false,
+        "reason": "스토리보드는 이 기록이 광주 시내 시민들에게 전해지는 흐름으로 이어진다고 설명합니다."
+      }
+    ],
+    "officialNote": "5월 18일 전남대 정문 앞 학생들의 등교 저지와 항의는 5·18 초기 전개를 설명하는 핵심 장면입니다. 표현은 반드시 공식 기록과 검증된 사료를 기준으로 다루어야 합니다.",
+    "restoredText": "1980년 5월 18일, 전남대 정문 앞에 모인 학생들은 비상계엄 해제, 계엄군 철수, 휴교령 철폐를 요구했습니다. 강경 진압 이후 학생들은 이 상황을 시민들에게 알리기 위해 광주 시내로 향했습니다.",
+    "rememberPoint": "5월 18일은 단순한 충돌의 시작이 아니라, 기록이 대학 밖으로 나가 시민들에게 전해지기 시작한 순간이었습니다.",
+    "nextRecord": "다음 기록: 광주 시내",
+    "sources": [
+      {
+        "name": "5·18기념재단 — 5·18 그날의 기록과 진실",
+        "url": "https://518.org/base/contents/view?contentsNo=1&menuLevel=3&menuNo=1"
+      },
+      {
+        "name": "전남대학교 민주길 — 전남대 정문",
+        "url": "https://518trail.jnu.ac.kr/SubPage.aspx?PageCode=K20200"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "code": "CH-03",
+    "chapter": "제3장",
+    "title": "시민항쟁의 전개",
+    "type": "route-restore",
+    "roleOwner": "다온",
+    "date": "1980년 5월 20일 밤",
+    "place": "광주 시내 · 금남로 방향",
+    "summary": "차량 이동 기록과 손상된 지도를 조합해 시민들이 항쟁의 주체로 나서는 흐름을 복원합니다.",
+    "storyQuote": "가두방송과 차량 불빛, 시민들의 함성이 겹치며 광주 시내 전체가 움직이기 시작합니다.",
+    "instruction": "손상된 광주 시내 지도와 차량 기록을 조합하세요. 시민들의 이동과 항쟁 전개를 설명하는 단서만 남겨야 합니다.",
+    "damagedRecord": "5월 20일 밤, 버스·택시·트럭의 이동 기록이 복원되기 시작합니다. 차량들은 [     ] 방향으로 모이고, 시민들은 [     ]하며 항쟁의 규모가 커졌습니다.",
+    "clues": [
+      {
+        "id": "street-broadcast",
+        "label": "가두방송",
+        "correct": true,
+        "reason": "스토리보드에서 시민들에게 행동을 촉구하는 중요한 장면입니다."
+      },
+      {
+        "id": "vehicles",
+        "label": "버스·택시·트럭 이동",
+        "correct": true,
+        "reason": "광주 시내의 움직임을 시각적으로 보여주는 핵심 단서입니다."
+      },
+      {
+        "id": "geumnamro",
+        "label": "금남로 방향 집결",
+        "correct": true,
+        "reason": "다음 기록 위치와 시민항쟁의 중심 흐름을 연결합니다."
+      },
+      {
+        "id": "citizen-join",
+        "label": "시민들의 합류",
+        "correct": true,
+        "reason": "시민들이 사건을 지켜보는 사람이 아니라 항쟁의 주체가 되는 전환점입니다."
+      },
+      {
+        "id": "stay-home",
+        "label": "모든 시민이 귀가해 상황 종료",
+        "correct": false,
+        "reason": "스토리보드의 시민항쟁 전개 흐름과 맞지 않습니다."
+      }
+    ],
+    "officialNote": "이 장은 시민들이 단순한 관찰자가 아니라 직접 행동하며 항쟁의 주체가 되는 과정을 다룹니다. 왜곡 방지를 위해 시민 폭도화 표현이나 출처 없는 주장은 공식 기록 비교 카드에서 제외해야 합니다.",
+    "restoredText": "5월 20일 밤, 차량 이동 기록과 가두방송이 이어지며 시민들은 금남로 방향으로 모였습니다. 계엄군의 진압을 목격한 시민들은 더 이상 물러서지 않고 항쟁의 주체가 되었습니다.",
+    "rememberPoint": "5·18의 기록은 피해의 기록이면서 동시에 시민들이 스스로 움직이고 연결된 항쟁의 기록입니다.",
+    "nextRecord": "다음 기록: 금남로",
+    "sources": [
+      {
+        "name": "5·18기념재단 — 5·18 그날의 기록과 진실",
+        "url": "https://www.518.org/base/menu/baseView?menuLevel=2&menuNo=1"
+      },
+      {
+        "name": "5·18민주화운동진상규명조사위원회 종합보고서",
+        "url": "https://www.518.org/storage/pdf/5.18%EC%A7%84%EC%83%81%EA%B7%9C%EB%AA%85%EC%A1%B0%EC%82%AC%EC%9C%84%EC%9B%90%ED%9A%8C%20%EC%A2%85%ED%95%A9%EB%B3%B4%EA%B3%A0%EC%84%9C1%282024.%206.%2024.%29.pdf"
+      }
+    ]
+  }
+]
