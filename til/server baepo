@@ -66,3 +66,21 @@ pm2 start app.js
 - 3000 포트 허용
 접속:
 > http://서버IP:3000
+# 웹 서버 연결 (Nginx)
+- Nginx 사용
+역할:
+- 사용자 요청을먼저 받고 Node.js 서버로 전달
+구조:
+사용자 → Nginx → Node.js
+
+장점:
+- 포트 번호 없이 접속 가능(80번 포트)
+- 서버 안정성 증가
+
+# HTTPS 적용 (보안)
+- Let's Encrypt 사용
+설명:
+- HTTP → HTTPS로 변경하여 데이터 암호화
+- 보안 강화 및 신뢰성 증가
+예:
+https://서버IP → https://도메인
