@@ -1,0 +1,153 @@
+# API Gateway 정리
+
+## API Gateway란?
+클라이언트와 여러 서버 사이에서 요청을 중간 처리하는 서버이다.
+
+```text
+클라이언트 ↔ API Gateway ↔ 여러 서버
+```
+
+사용자는 Gateway만 호출하고,
+Gateway가 내부 서버로 요청을 전달한다.
+
+---
+
+# 왜 사용하는가?
+
+예시 서버 구조
+
+```text
+유저 서버 : 8081
+채팅 서버 : 8082
+알림 서버 : 8083
+```
+
+원래는 각각 직접 접근해야 한다.
+
+```text
+localhost:8081/user
+localhost:8082/chat
+localhost:8083/notify
+```
+
+하지만 API Gateway를 사용하면:
+
+```text
+localhost:8000/user
+localhost:8000/chat
+localhost:8000/notify
+```
+
+처럼 하나의 주소로 관리할 수 있다.
+
+---
+
+# API Gateway의 역할
+
+## 1. 라우팅(Routing)
+요청을 적절한 서버로 전달한다.
+
+예시:
+
+```text
+/user → 유저 서버
+/chat → 채팅 서버
+```
+
+---
+
+## 2. 인증(Authentication)
+JWT 토큰 검사 등 인증 처리를 수행한다.
+
+예시:
+- 로그인 여부 확인
+- 권한 검사
+
+---
+
+## 3. 로드 밸런싱(Load Balancing)
+트래픽을 여러 서버로 분산한다.
+
+```text
+Gateway
+ ├ 서버1
+ ├ 서버2
+ └ 서버3
+```
+
+---
+
+## 4. 요청 제한(Rate Limiting)
+과도한 요청을 제한한다.
+
+예시:
+- 초당 요청 제한
+- IP 차단
+
+---
+
+## 5. 로그 관리(Logging)
+모든 요청 기록을 저장할 수 있다.
+
+---
+
+# 관련 기술
+
+## Spring 계열
+- Spring Cloud Gateway
+
+## 서버 관리
+- NGINX
+
+## 기타 Gateway
+- Kong
+- Express Gateway
+
+---
+
+# 추천 공부 순서
+
+```text
+1. REST API
+2. JWT 인증
+3. Reverse Proxy
+4. NGINX
+5. Spring Cloud Gateway
+6. MSA 구조
+```
+
+---
+
+# 프로젝트 예시
+
+## 1단계
+각 서버 만들기
+
+```text
+유저 서버
+채팅 서버
+알림 서버
+```
+
+---
+
+## 2단계
+Gateway 서버 추가
+
+```text
+localhost:8000/user
+localhost:8000/chat
+```
+
+---
+
+## 3단계
+JWT 인증을 Gateway에서 처리
+
+---
+
+# 핵심 정리
+
+API Gateway는 여러 서버의 출입문 역할을 한다.
+
+특히 MSA(Microservices Architecture) 환경에서 많이 사용된다.
